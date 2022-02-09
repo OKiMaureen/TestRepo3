@@ -1,5 +1,8 @@
 on: push
 jobs:
   ci:
-    uses: okimaureen/test/.github/workflows/main.yml@master
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: okimaureen/test/.github/workflows/main.yml@master
    
